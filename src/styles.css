@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blueviolet;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+}
+
+h1 {
+  font-size: 80px;
+  margin-top: 5rem;
+}
+.welcome {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.welcome h2 {
+  font-size: 80px;
+}
+
+.welcome p {
+  font-size: 60px;
+}
+
+.welcome button {
+  font-size: 30px;
+  width: 200px;
+  height: 70px;
+  background-color: rgb(62, 5, 116);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.form-question {
+  text-align: center;
+  margin: 5rem auto;
+  min-width: 300px;
+  max-width: 500px;
+  min-height: 400px;
+  max-height: 900px;
+  background-color: rgb(53, 4, 98);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.form-question h4 {
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+.option-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  background-color: blueviolet;
+  border: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+button {
+  width: 250px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(306deg, blue, blueviolet, rgb(80, 10, 146));
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.correct {
+  background-color: rgb(13, 247, 13);
+  font-weight: bold;
+}
+
+.wrong {
+  background-color: red;
+  font-weight: bold;
+}
+
+.endgame {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .welcome {
+    gap: 0;
+  }
+  .welcome p {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .welcome h2 {
+    font-size: 30px;
+  }
+
+  .welcome button {
+    margin-top: 2rem;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+  }
+
+  .form-question {
+    max-width: 300px;
+  }
+
+  .endgame button {
+    margin-top: 2rem;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+  }
+  body {
+    text-align: center;
+  }
+}
